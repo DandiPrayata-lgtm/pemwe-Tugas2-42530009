@@ -1,0 +1,26 @@
+<%- include('../partials/header', { pageTitle }) %>
+
+<section class="card">
+  <h1><%= film.judul %></h1>
+
+  <div class="detail-layout">
+    <img class="poster" src="<%= film.poster %>" alt="Poster film <%= film.judul %>" width="240" height="360">
+
+    <div class="detail-info">
+      <dl class="detail">
+        <dt>Tahun Rilis</dt>
+        <dd><%= film.tahun %></dd>
+        <dt>Genre Film</dt>
+        <dd><%= film.genre %></dd>
+        <dt>Sutradara</dt>
+        <dd><%= film.sutradara %></dd>
+        <dt>Sinopsis Film</dt>
+        <dd><%= film.sinopsis %></dd>
+      </dl>
+
+      <a class="btn" href="/">&larr; Kembali ke Daftar film</a>
+    </div>
+  </div>
+</section>
+
+<%- include('../partials/footer') %>
